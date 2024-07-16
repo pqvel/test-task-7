@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,25 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main class="container">
+      <div class="banner">
+        <div class="banner__info">
+          <h1 class="banner__title">Демо-версия</h1>
+          <p class="banner__text">
+            За 18 лет деятельности было реализовано более 500 крупных, а так же,
+            не менее 2500 средних и малых проектов. Используя знания и
+            накопленный опыт мы можем предложить
+          </p>
+          <button class="btn banner__btn">
+            Попробовать бесплатно
+            <svg>
+              <use href="./src/assets/sprites.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <img src="./src/assets/banner.png" width="910" height="456" />
+      </div>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
