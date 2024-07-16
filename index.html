@@ -5,6 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="container">
@@ -16,14 +22,22 @@
             не менее 2500 средних и малых проектов. Используя знания и
             накопленный опыт мы можем предложить
           </p>
-          <button class="btn banner__btn">
+          <button class="banner__btn">
             Попробовать бесплатно
-            <svg>
-              <use href="./src/assets/sprites.svg#icon-arrow"></use>
-            </svg>
+            <div class="banner__btn-icon">
+              <svg width="24" height="24">
+                <use href="./src/assets/sprites.svg#icon-arrow"></use>
+              </svg>
+            </div>
           </button>
         </div>
-        <img src="./src/assets/banner.png" width="910" height="456" />
+        <img
+          class="banner__img"
+          src="./src/assets/banner.png"
+          width="910"
+          height="456"
+          alt="Демо версия"
+        />
       </div>
     </main>
     <script type="module" src="/src/main.ts"></script>

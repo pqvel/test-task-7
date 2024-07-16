@@ -1,0 +1,173 @@
+@import url("modern-normalize");
+
+$white: #ffffff;
+
+$lightBlue: #ebf0fa;
+$darkBlue: #1f4284;
+$gray: #727272;
+
+$darkBlueBtn: #244c98;
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  padding: 36px 40px;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  background-color: $lightBlue;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 72px;
+    width: 50%;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 500;
+    color: $darkBlue;
+    margin: 0 0 18px;
+    max-width: 510px;
+  }
+
+  &__text {
+    font-size: 17px;
+    color: $gray;
+    margin: 0 0 36px;
+    max-width: 510px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 48px;
+    background-color: $darkBlueBtn;
+    border-radius: 60px;
+    height: 68px;
+    padding: 0 12px 0 24px;
+    color: $white;
+    font-size: 18px;
+    line-height: 28.8px;
+    font-weight: 500;
+
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+    border: none;
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 50%;
+      background-color: $white;
+      color: $darkBlue;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1440px) {
+  .banner {
+    &__title {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .banner {
+    &__info {
+      padding: 36px;
+    }
+
+    &__btn {
+      gap: 10px;
+      padding: 0 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+
+  .banner {
+    flex-direction: column;
+
+    &__info {
+      padding: 24px;
+      width: 100%;
+    }
+
+    &__title {
+      max-width: unset;
+    }
+
+    &__text {
+      font-size: 13px;
+      margin: 0 0 18px;
+      max-width: unset;
+    }
+
+    &__btn {
+      height: 56px;
+      gap: 19px;
+
+      &-icon {
+        width: 36px;
+        min-width: unset;
+        height: 36px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 70%;
+      max-height: 360px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 14px 24px;
+  }
+
+  .banner {
+    flex-direction: column;
+
+    &__title {
+      margin: 14px;
+    }
+
+    &__text {
+      font-size: 15px;
+      margin: 0 0 24px;
+    }
+
+    &__btn {
+      height: 56px;
+      gap: 19px;
+    }
+  }
+}
