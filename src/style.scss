@@ -67,10 +67,16 @@ body {
     line-height: 28.8px;
     font-weight: 500;
 
+    transition: 0.25s;
     cursor: pointer;
     outline: none;
     margin: 0;
     border: none;
+
+    &:hover {
+      background-color: $darkBlue;
+      color: $white;
+    }
 
     &-icon {
       display: flex;
@@ -186,6 +192,7 @@ body {
     color: $dark;
     width: 100%;
     font-size: 18px;
+    cursor: pointer;
 
     input[type="checkbox"] {
       display: none;
@@ -211,6 +218,11 @@ body {
     color: $darkBlueBtn;
     cursor: pointer;
     margin-bottom: 36px;
+    transition: 0.25s;
+
+    &:hover {
+      color: $darkBlue;
+    }
   }
 
   &__btn {
@@ -228,10 +240,24 @@ body {
     font-weight: 500;
     border: 1px solid $darkBlueBtn;
     cursor: pointer;
+    transition: 0.25s;
+
+    &:hover {
+      background-color: $darkBlue;
+      color: $white;
+    }
 
     &--link {
       background-color: $white;
       color: $darkBlueBtn;
+
+      transition: 0.25s;
+
+      &:hover {
+        background-color: $lightBlue;
+        color: $darkBlue;
+        border: 1px solid $darkBlue;
+      }
     }
   }
 }
